@@ -3,7 +3,7 @@
     public class WeatherResponse
     {
         public Coord Coord { get; set; }
-        public List<Weather> Weathers { get; set; }
+        public List<Weather> Weather { get; set; }
         public string Base { get; set; }
         public Main Main { get; set; }
         public int Visibility { get; set; }

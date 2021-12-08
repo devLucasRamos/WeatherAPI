@@ -24,3 +24,6 @@ C:\Users\lucas\source\repos\WeatherAPI\obj\Debug\net6.0\WeatherAPI.dll
 C:\Users\lucas\source\repos\WeatherAPI\obj\Debug\net6.0\ref\WeatherAPI.dll
 C:\Users\lucas\source\repos\WeatherAPI\obj\Debug\net6.0\WeatherAPI.pdb
 C:\Users\lucas\source\repos\WeatherAPI\obj\Debug\net6.0\WeatherAPI.genruntimeconfig.cache
+C:\Users\lucas\source\repos\WeatherAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\lucas\source\repos\WeatherAPI\bin\Debug\net6.0\RestSharp.dll
+C:\Users\lucas\source\repos\WeatherAPI\obj\Debug\net6.0\WeatherAPI.csproj.CopyComplete
