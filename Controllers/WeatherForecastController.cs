@@ -5,6 +5,7 @@ namespace WeatherAPI.Controllers
 {
     public class WeatherForecastController : Controller
     {
+        [HttpGet]
         public IActionResult SearchByCity()
         {
             var viewModel = new SearchByCity();
