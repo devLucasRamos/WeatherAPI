@@ -4,6 +4,6 @@ namespace WeatherAPI.Repositories
 {
     public interface IWForecastRepository
     {
-        WeatherResponse GetForecast(string city);
+        WeatherResponse GetForecast(string city);   
     }
 }

@@ -1,7 +1,7 @@
 ﻿@model WeatherAPI.Models.SearchByCity
 
 @{
-    ViewData["Title"] = "SeachByCity";
+    ViewData["Title"] = "SearchByCity";
 }
 
 <div class="container">
@@ -9,8 +9,8 @@
         <div class="container">            
             <h2>Search By City Name</h2>
               <div>
-                <input form="CityName" class="form-control" placeholder="Enter city name..." />
-                    <button asp-controller="WeatherForecast" asp-action="SearchByCity" class="btn btn-outline-primary">
+                <input asp-for="CityName" class="form-control" placeholder="Enter city name..." />
+                   <button asp-controller="WeatherForecast" asp-action="SearchByCity" class="btn btn-outline-primary">
                         Search
                     </button>               
                 <span asp-validation-for="CityName" class="text-danger"></span>          

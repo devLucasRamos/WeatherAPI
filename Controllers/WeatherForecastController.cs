@@ -18,17 +18,19 @@ namespace WeatherAPI.Controllers
         public IActionResult SearchByCity()
         {
             var viewModel = new SearchByCity();
-            return View();
+            return View(viewModel);
         }
+
         [HttpPost]
         public IActionResult SearchByCity(SearchByCity model)
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("City", "WeatherForecast", new { city = model.CityName });    
+                return RedirectToAction("City", "WeatherForecast", new {city = model.CityName});    
             }
             return View(model);
         }
+
         [HttpGet]
         public IActionResult City(string city)
         {
@@ -36,12 +38,12 @@ namespace WeatherAPI.Controllers
             City viewModel = new City();
             if(weatherResponse != null)
             {
-                viewModel.Name = weatherResponse.Name;
+                viewModel.Name = weatherResponse.name;
                 viewModel.Temperature = weatherResponse.Main.Temp;
                 viewModel.Humidity = weatherResponse.Main.Humidity;
                 viewModel.Pressure = weatherResponse.Main.Pressure;
                 viewModel.Weather = weatherResponse.Weather[0].Main;
-                viewModel.Wind = weatherResponse.Wind.Speed;             
+                viewModel.Wind = weatherResponse.Wind.Speed;
             }
             return View(viewModel);
         }

@@ -9,8 +9,11 @@ namespace WeatherAPI.Repositories
     {
         public WeatherResponse GetForecast(string city)
         {
+            
             string APP_ID = Configuration.Values.OPEN_WEATHER_APP_ID;
-            var client = new RestClient($"api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={APP_ID}");
+            var client = new RestClient($"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={APP_ID}");
+            Console.WriteLine(client);
+        
             var request = new RestRequest(Method.GET);
             IRestResponse response = client.Execute(request);
             if (response.IsSuccessful)

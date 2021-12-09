@@ -13,7 +13,7 @@
         public Sys Sys { get; set; }
         public int Timezone { get; set; }
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string name { get; set; }
         public int Cod { get; set; }
     }
 }
